@@ -7,17 +7,17 @@ const inputArr = input
   .map((entry) => parseInt(entry))
   .sort((a, b) => a - b);
 
-let rIdx = 0;
-let lIdx = 199;
+let lIdx = 0;
+let rIdx = 199;
 
-while (rIdx < lIdx) {
+while (lIdx < rIdx) {
   let thisSum = inputArr[rIdx] + inputArr[lIdx];
   if (thisSum === 2020) {
     console.log(inputArr[rIdx] * inputArr[lIdx]);
     return;
   } else if (thisSum < 2020) {
-    rIdx++;
+    lIdx++;
   } else if (thisSum > 2020) {
-    lIdx--;
+    rIdx--;
   }
 }
