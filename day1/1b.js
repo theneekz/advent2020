@@ -1,10 +1,8 @@
 const fs = require('fs');
 
-const input = fs.readFileSync('input.txt');
-const inputArr = input
-  .toString()
-  .split('\n')
-  .map((entry) => parseInt(entry));
+const input = fs.readFileSync('input.txt', 'utf8');
+
+const inputArr = input.split('\n').map((entry) => parseInt(entry));
 
 let hash = {};
 
