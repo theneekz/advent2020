@@ -1,8 +1,8 @@
 const fs = require('fs');
 
-const input = fs.readFileSync('input.txt');
+const input = fs.readFileSync('input.txt', 'utf8');
+
 const inputArr = input
-  .toString()
   .split('\n')
   .map((entry) => parseInt(entry))
   .sort((a, b) => a - b);
