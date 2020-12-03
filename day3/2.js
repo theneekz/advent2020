@@ -37,3 +37,5 @@ for (let row = 2; row < fullSlope.length; row += 2) {
 
 console.log(treeCount1 * treeCount2 * treeCount3 * treeCount4 * treeCount5);
 return;
+
+//should be 2*O(n) so O(n)
