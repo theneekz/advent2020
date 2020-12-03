@@ -2,7 +2,7 @@ const fs = require('fs');
 const input = fs.readFileSync('input.txt', 'utf8');
 const inputArr = input.split('\n').slice(0, -1);
 
-//moves 3 right and 1 down
+//moves up to 7 right and 1 down
 //width is 31 (can multiply out to the right) length is 323 (fixed)
 //7 * 323 = 2261 / 31 = 72.9 ~ 73
 const fullSlope = inputArr.map((row) => row.repeat(73));
