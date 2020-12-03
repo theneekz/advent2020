@@ -14,8 +14,7 @@ const test = (pos1, pos2, char, pass) => {
 let result = 0;
 
 for (let row = 0; row < 1000; row++) {
-  let thisRow = inputArr[row].split(':');
-  //let thisRow = inputArr[0].split(':');
+  let thisRow = inputArr[row].split(': ');
   let thisRule = thisRow[0].split(' ');
   let thisRange = thisRule[0].split('-');
   let thisPos1 = thisRange[0];
