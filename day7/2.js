@@ -24,10 +24,7 @@ for (let i = 0; i < inputArr.length - 1; i++) {
   }
 }
 
-// console.log(allBags);
-
 const helper = (arr, color, quant = 1) => {
-  console.log(color);
   let count = 0;
   arr.forEach((bag) => {
     if (bag.color === color) {
