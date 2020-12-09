@@ -42,11 +42,10 @@ const findShiny = (arr) => {
     let current = parentNames.shift();
     arr.forEach((bag) => {
       if (bag.children[current]) {
-        if (!parentNames.includes(bag.color)) {
-          if (seenNames[bag.color] !== true) {
-            resultCount++;
-            parentNames.push(bag.color);
-          }
+        if (seenNames[bag.color] !== true) {
+          seenNames[bag.color] = true;
+          resultCount++;
+          parentNames.push(bag.color);
         }
       }
     });
