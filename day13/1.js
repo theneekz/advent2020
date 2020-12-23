@@ -1,4 +1,3 @@
-const { time } = require('console');
 const fs = require('fs');
 //const input = fs.readFileSync('test.txt', 'utf-8');
 const input = fs.readFileSync('input.txt', 'utf-8');
